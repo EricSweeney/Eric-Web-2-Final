@@ -367,6 +367,29 @@ template {
 /* =============
     Header
 ============= */
+#header {
+  padding: 10px;
+}
+
 /* =============
     Footer
 ============= */
+footer {
+  background-color: darkblue;
+}
+
+/* COVID Warning */
+#covid {
+  width: auto;
+  text-align: center;
+  background-color: pink;
+  color: purple;
+  padding: 5px;
+}
+
+#hero {
+  background-image: url(../img/Hero.png);
+  background-position: center;
+  margin-top: 0;
+  padding: 50px;
+}
