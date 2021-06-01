@@ -1,9 +1,19 @@
 #start {
+    color: #454545;
     img {
         display: none;
     }
+    h2{
+        font-size: 28px;
+    }
+    p{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+    }
     #start-content {
         background-color: #A1F3DE;
+        padding: 5px 20px 10px 20px;
         
             #s2 {
                 display: none;
@@ -22,6 +32,10 @@
         }
         table{
             width: 100%;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 0px 20px 0px 20px;
         }
         .time {
             text-align: right;

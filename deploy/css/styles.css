@@ -2,6 +2,8 @@
     Mixins
 ============= */
 /* ---------------- Font Sizing ---------------- */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 html {
   font-size: 100%;
 }
@@ -355,6 +357,10 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Bebas Neue", cursive;
+}
+
 /* =============
     Buttons
 ============= */
@@ -380,11 +386,20 @@ footer {
 
 /* COVID Warning */
 #covid {
+  font-family: "Source Sans Pro", sans-serif;
   width: auto;
   text-align: center;
   background-color: #FF6A7F;
   color: #631f1f;
   padding: 5px;
+}
+#covid h2 {
+  font-size: 28px;
+}
+#covid p {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0px 20px 0px 20px;
 }
 
 #hero {
@@ -396,6 +411,9 @@ footer {
 }
 #hero h2 {
   color: white;
+  font-size: 24px;
+  padding-left: 20px;
+  width: 50%;
 }
 #hero p {
   display: none;
@@ -404,31 +422,56 @@ footer {
   display: none;
 }
 
-#services h1 {
+#memberships h1 {
+  font-size: 28px;
   text-align: center;
+  padding: 20px 0px 20px 0px;
   background-color: #252C32;
   color: white;
 }
+
+#services {
+  color: #454545;
+}
+#services h1 {
+  font-size: 28px;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  background-color: #252C32;
+  color: white;
+}
+#services h3 {
+  font-size: 24px;
+}
 #services img {
   width: 100%;
+}
+#services #stuff {
+  padding: 0px 20px 0px 20px;
 }
 #services #boulder h3 {
   text-align: center;
 }
 #services #boulder div {
   background-color: #d8d8d8;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 20px 10px 20px;
 }
 #services #day h3 {
   text-align: center;
 }
 #services #day div {
   background-color: #d8d8d8;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 20px 10px 20px;
 }
 #services #punch h3 {
   text-align: center;
 }
 #services #punch div {
   background-color: #d8d8d8;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 20px 10px 20px;
 }
 #services #groupon {
   display: none;
@@ -438,13 +481,29 @@ footer {
 }
 #services #more {
   background-color: #A1F3DE;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#services #more p {
+  padding: 20px;
 }
 
+#start {
+  color: #454545;
+}
 #start img {
   display: none;
 }
+#start h2 {
+  font-size: 28px;
+}
+#start p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
 #start #start-content {
   background-color: #A1F3DE;
+  padding: 5px 20px 10px 20px;
 }
 #start #start-content #s2 {
   display: none;
@@ -460,6 +519,10 @@ footer {
 }
 #start #hours table {
   width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0px 20px 0px 20px;
 }
 #start #hours .time {
   text-align: right;

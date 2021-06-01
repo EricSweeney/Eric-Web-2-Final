@@ -1,9 +1,18 @@
 /* COVID Warning */
 
 #covid {
+    font-family: 'Source Sans Pro', sans-serif;
     width: auto;
     text-align: center;
     background-color: #FF6A7F;
     color: #631f1f;
     padding: 5px;
+    h2{
+        font-size: 28px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 600;
+        padding: 0px 20px 0px 20px;
+    }
 }

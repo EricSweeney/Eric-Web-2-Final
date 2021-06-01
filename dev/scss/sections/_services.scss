@@ -1,28 +1,55 @@
 #services {
+    color: #454545;
     h1{
+        font-size: 28px;
         text-align: center;
+        padding: 20px 0px 20px 0px;
         background-color: #252C32;
         color: white;
     }
-    img{
-        width: 100%;
+
+    h3{font-size: 24px;}
+    img{width: 100%;}
+
+    #stuff{
+        padding: 0px 20px 0px 20px;
     }
+
     #boulder{
         h3 {text-align: center;}
-        div {background-color: #d8d8d8;}
+        div {
+            background-color: #d8d8d8;
+            font-family: 'Source Sans Pro', sans-serif;
+            padding: 10px 20px 10px 20px;
+        }
     }
+
     #day{
         h3 {text-align: center;}
-        div {background-color: #d8d8d8;}
+        div {
+            background-color: #d8d8d8;
+            font-family: 'Source Sans Pro', sans-serif;
+            padding: 10px 20px 10px 20px;
+        }
     }
+
     #punch{
         h3 {text-align: center;}
-        div {background-color: #d8d8d8;}
+        div {
+            background-color: #d8d8d8;
+            font-family: 'Source Sans Pro', sans-serif;
+            padding: 10px 20px 10px 20px;
+        }
     }
+    
     #groupon {display: none;}
     #online {display: none;}
 
     #more{
         background-color: #A1F3DE;
+        font-family: 'Source Sans Pro', sans-serif;
+        p{
+            padding: 20px;
+        }
     }
 }
