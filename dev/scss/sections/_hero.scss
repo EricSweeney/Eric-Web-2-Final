@@ -4,5 +4,16 @@
     background-image: url(../img/Hero.png);
     background-position: center;
     margin-top: 0;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;;
+
+    h2 {
+        color: white;
+    }
+    p {
+        display: none;
+    }
+    button {
+        display: none;
+    }
 }

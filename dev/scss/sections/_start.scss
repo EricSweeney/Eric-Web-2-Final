@@ -1,0 +1,30 @@
+#start {
+    img {
+        display: none;
+    }
+    #start-content {
+        background-color: #A1F3DE;
+        
+            #s2 {
+                display: none;
+            }
+            #s3 {
+                display: none;
+            }
+           
+        button {
+            display: none;
+        }
+    }   
+    #hours {
+        h2{
+            text-align: center;
+        }
+        table{
+            width: 100%;
+        }
+        .time {
+            text-align: right;
+        }
+    } 
+}

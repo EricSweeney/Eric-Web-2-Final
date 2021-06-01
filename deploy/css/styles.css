@@ -382,8 +382,8 @@ footer {
 #covid {
   width: auto;
   text-align: center;
-  background-color: pink;
-  color: purple;
+  background-color: #FF6A7F;
+  color: #631f1f;
   padding: 5px;
 }
 
@@ -391,5 +391,76 @@ footer {
   background-image: url(../img/Hero.png);
   background-position: center;
   margin-top: 0;
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#hero h2 {
+  color: white;
+}
+#hero p {
+  display: none;
+}
+#hero button {
+  display: none;
+}
+
+#services h1 {
+  text-align: center;
+  background-color: #252C32;
+  color: white;
+}
+#services img {
+  width: 100%;
+}
+#services #boulder h3 {
+  text-align: center;
+}
+#services #boulder div {
+  background-color: #d8d8d8;
+}
+#services #day h3 {
+  text-align: center;
+}
+#services #day div {
+  background-color: #d8d8d8;
+}
+#services #punch h3 {
+  text-align: center;
+}
+#services #punch div {
+  background-color: #d8d8d8;
+}
+#services #groupon {
+  display: none;
+}
+#services #online {
+  display: none;
+}
+#services #more {
+  background-color: #A1F3DE;
+}
+
+#start img {
+  display: none;
+}
+#start #start-content {
+  background-color: #A1F3DE;
+}
+#start #start-content #s2 {
+  display: none;
+}
+#start #start-content #s3 {
+  display: none;
+}
+#start #start-content button {
+  display: none;
+}
+#start #hours h2 {
+  text-align: center;
+}
+#start #hours table {
+  width: 100%;
+}
+#start #hours .time {
+  text-align: right;
 }
