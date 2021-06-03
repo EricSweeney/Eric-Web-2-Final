@@ -381,7 +381,8 @@ body {
     Footer
 ============= */
 footer {
-  background-color: darkblue;
+  background-color: #252c32;
+  color: #ebeaea;
 }
 
 /* COVID Warning */
@@ -402,9 +403,30 @@ footer {
   padding: 0px 20px 0px 20px;
 }
 
+#group {
+  color: #454545;
+}
+#group h1 {
+  font-size: 28px;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  background-color: #252C32;
+  color: white;
+}
+#group #work {
+  padding: 20px;
+}
+#group .bebas {
+  font-family: "Source Sans Pro", sans-serif;
+}
+#group .hide {
+  display: none;
+}
+
 #hero {
   background-image: url(../img/Hero.png);
   background-position: center;
+  background-size: 100%;
   margin-top: 0;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -428,6 +450,16 @@ footer {
   padding: 20px 0px 20px 0px;
   background-color: #252C32;
   color: white;
+}
+#memberships .bebas {
+  font-family: "Source Sans Pro", sans-serif;
+}
+#memberships .hide {
+  display: none;
+}
+#memberships #intro {
+  padding: 20px;
+  color: #454545;
 }
 
 #services {
@@ -485,6 +517,33 @@ footer {
 }
 #services #more p {
   padding: 20px;
+}
+
+#shop h1 {
+  font-size: 28px;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  background-color: #252C32;
+  color: white;
+}
+#shop #shop-content {
+  padding: 20px;
+}
+#shop p {
+  display: none;
+}
+#shop img {
+  width: 100%;
+}
+#shop h3 {
+  text-align: center;
+}
+#shop button {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#shop input {
+  width: 100%;
 }
 
 #start {
