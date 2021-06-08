@@ -17,4 +17,62 @@
         display: none;
     }
     color: #454545;
+
+    @include md{
+        #work{
+            padding: 0;
+        }
+        .hide{
+            display: block;
+        }
+        table{
+            width: 100%;
+            height: 150px;
+            padding: 10px 20px;
+        }
+        img{
+            height: 550px;
+        }
+        #grid-contents{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-areas: "i c";
+            
+            #party-image{
+                grid-area: i;
+            }
+            #content-table{
+                grid-area: c;
+            }
+        }
+        #headers{
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-template-areas: "h1 h2";
+
+            #h1{
+                grid-area: h1;
+            }
+            #h2{
+                grid-area: h2;
+            }
+        }
+        #grey{
+            padding: 20px;
+            background-color: #d8d8d8;
+        }
+        #large-group{
+            text-align: center;
+            background-color: #d8d8d8;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 20px 200px;
+            p{
+                margin: 0;
+            }
+        }
+        button{
+            display: none;
+        }
+    }
 }

@@ -422,6 +422,61 @@ footer {
 #group .hide {
   display: none;
 }
+@media (min-width: 768px) {
+  #group #work {
+    padding: 0;
+  }
+  #group .hide {
+    display: block;
+  }
+  #group table {
+    width: 100%;
+    height: 150px;
+    padding: 10px 20px;
+  }
+  #group img {
+    height: 550px;
+  }
+  #group #grid-contents {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "i c";
+  }
+  #group #grid-contents #party-image {
+    grid-area: i;
+  }
+  #group #grid-contents #content-table {
+    grid-area: c;
+  }
+  #group #headers {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-areas: "h1 h2";
+  }
+  #group #headers #h1 {
+    grid-area: h1;
+  }
+  #group #headers #h2 {
+    grid-area: h2;
+  }
+  #group #grey {
+    padding: 20px;
+    background-color: #d8d8d8;
+  }
+  #group #large-group {
+    text-align: center;
+    background-color: #d8d8d8;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px 200px;
+  }
+  #group #large-group p {
+    margin: 0;
+  }
+  #group button {
+    display: none;
+  }
+}
 
 #hero {
   background-image: url(../img/Hero.png);
@@ -439,9 +494,27 @@ footer {
 }
 #hero p {
   display: none;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
 }
 #hero button {
   display: none;
+}
+@media (min-width: 768px) {
+  #hero {
+    padding: 90px 90px 90px 90px;
+  }
+  #hero p {
+    display: block;
+    width: 50%;
+    padding-left: 20px;
+  }
+  #hero button {
+    display: block;
+    margin-left: 20px;
+  }
 }
 
 #memberships h1 {
@@ -460,6 +533,64 @@ footer {
 #memberships #intro {
   padding: 20px;
   color: #454545;
+}
+@media (min-width: 768px) {
+  #memberships #intro {
+    padding: 0px 90px;
+  }
+  #memberships .hide {
+    display: block;
+  }
+  #memberships .title {
+    padding-left: 90px;
+  }
+  #memberships #member-one {
+    display: grid;
+    grid-auto-columns: 40% 60%;
+    grid-template-areas: "a t";
+  }
+  #memberships #member-one table {
+    width: 100%;
+    height: 250px;
+    padding-left: 20px;
+  }
+  #memberships #member-one #aside-one {
+    grid-area: a;
+    background-color: #d8d8d8;
+    padding: 20px 20px 20px 70px;
+  }
+  #memberships #member-one #table-one {
+    grid-area: t;
+  }
+  #memberships #member-two {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "m c";
+  }
+  #memberships #member-two table {
+    width: 100%;
+    height: 100px;
+    padding-left: 20px;
+  }
+  #memberships #member-two #aside-two {
+    grid-area: m;
+    background-color: #d8d8d8;
+    padding: 20px 20px 20px 70px;
+  }
+  #memberships #member-two #table-two {
+    grid-area: c;
+  }
+  #memberships #cancel {
+    background-color: #a1f3de;
+    padding: 10px 90px;
+    margin-top: 40px;
+  }
+  #memberships #cancel h2 {
+    text-align: center;
+  }
+  #memberships #cancel button {
+    display: none;
+  }
 }
 
 #services {
@@ -518,6 +649,45 @@ footer {
 #services #more p {
   padding: 20px;
 }
+@media (min-width: 768px) {
+  #services #all-rates {
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    grid-template-areas: "c1 c2 c3";
+    gap: 20px;
+  }
+  #services #all-rates div {
+    height: 450px;
+  }
+  #services #boulder {
+    grid-area: c1;
+  }
+  #services #day {
+    grid-area: c2;
+  }
+  #services #punch {
+    grid-area: c3;
+  }
+  #services #stuff {
+    padding: 10px 90px;
+  }
+  #services #stuff button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+  #services #more {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  #services #more p {
+    margin-bottom: 0;
+  }
+  #services #more button {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
 
 #shop h1 {
   font-size: 28px;
@@ -544,6 +714,26 @@ footer {
 }
 #shop input {
   width: 100%;
+}
+@media (min-width: 768px) {
+  #shop p {
+    display: block;
+  }
+  #shop #shop-items {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "s1 s2";
+    gap: 20px;
+  }
+  #shop #shop-items #gear {
+    grid-area: s1;
+  }
+  #shop #shop-items #merch {
+    grid-area: s2;
+  }
+  #shop #shop-content {
+    padding: 20px 90px;
+  }
 }
 
 #start {
@@ -573,6 +763,14 @@ footer {
 #start #start-content button {
   display: none;
 }
+@media (min-width: 768px) {
+  #start #start-content {
+    padding: 40px 110px 40px 110px;
+  }
+  #start #start-content #s2 {
+    display: block;
+  }
+}
 #start #hours h2 {
   text-align: center;
 }
@@ -585,4 +783,10 @@ footer {
 }
 #start #hours .time {
   text-align: right;
+}
+@media (min-width: 768px) {
+  #start #hours {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }

@@ -18,12 +18,20 @@
             #s2 {
                 display: none;
             }
+            
             #s3 {
                 display: none;
             }
            
         button {
             display: none;
+        }
+            
+        @include md {
+            #s2 {
+                display: block;
+            }
+            padding: 40px 110px 40px 110px;
         }
     }   
     #hours {
@@ -40,5 +48,10 @@
         .time {
             text-align: right;
         }
+        @include md{
+            padding-left: 150px;
+            padding-right: 150px;
+        }
     } 
 }
+

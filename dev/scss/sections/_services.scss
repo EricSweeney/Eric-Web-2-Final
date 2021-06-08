@@ -52,4 +52,46 @@
             padding: 20px;
         }
     }
+    @include md{
+        #all-rates{
+            div{
+                height: 450px;
+            }
+            display: grid;
+            grid-template-columns: (3, 1fr);
+            grid-template-areas: "c1 c2 c3";
+            gap: 20px;
+        }
+        
+        #boulder{
+            grid-area: c1; 
+        }
+        #day{
+            grid-area: c2;
+        }
+        #punch{
+            grid-area: c3;
+        }
+        #stuff{
+            padding: 10px 90px;
+        }
+        #stuff{
+            button{
+                display: block;
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+        #more{
+            padding-left: 70px;
+            padding-right: 70px;
+            p{
+                margin-bottom: 0;
+            }
+            button{
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
 }

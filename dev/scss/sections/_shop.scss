@@ -25,4 +25,26 @@
     input{
         width: 100%;
     }
+
+    @include md{
+        p{
+            display: block;
+        }
+        #shop-items{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "s1 s2";
+            gap: 20px;
+
+            #gear{
+                grid-area: s1;
+            }
+            #merch{
+                grid-area: s2;
+            }
+        }
+        #shop-content{
+            padding: 20px 90px;
+        }
+    }
 }
