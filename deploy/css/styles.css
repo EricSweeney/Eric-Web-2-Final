@@ -429,6 +429,10 @@ footer {
   #group .hide {
     display: block;
   }
+  #group #dumb {
+    display: table;
+    width: 100%;
+  }
   #group img {
     height: 550px;
   }
@@ -494,9 +498,6 @@ footer {
   }
   #group #grid-contents #table-help {
     grid-area: t;
-  }
-  #group #grid-contents #table-help > div {
-    height: 200px;
   }
   #group #grid-contents #complex-stuff {
     grid-area: m;

@@ -26,6 +26,10 @@
         .hide{
             display: block;
         }
+        #dumb{
+            display: table;
+            width: 100%;
+        }
         
         img{
             height: 550px;
@@ -99,9 +103,6 @@
             }
             #table-help{
                 grid-area: t;
-                >div {
-                    height: 200px;
-                }
             }
             #complex-stuff{
                 grid-area: m;
