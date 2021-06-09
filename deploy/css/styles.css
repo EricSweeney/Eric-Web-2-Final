@@ -429,24 +429,29 @@ footer {
   #group .hide {
     display: block;
   }
-  #group table {
-    width: 100%;
-    height: 150px;
-    padding: 10px 20px;
-  }
   #group img {
     height: 550px;
   }
   #group #grid-contents {
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "i c";
+    grid-template-columns: 40% 30% 30%;
+    grid-template-areas: "i c c" "i t t" "m m m";
   }
   #group #grid-contents #party-image {
     grid-area: i;
   }
   #group #grid-contents #content-table {
     grid-area: c;
+  }
+  #group #grid-contents #table-help {
+    grid-area: t;
+  }
+  #group #grid-contents #complex-stuff {
+    grid-area: m;
+    width: 100%;
+  }
+  #group #grid-contents #complex-stuff p {
+    padding: 20px;
   }
   #group #headers {
     display: grid;
@@ -466,15 +471,40 @@ footer {
   #group #large-group {
     text-align: center;
     background-color: #d8d8d8;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px 200px;
-  }
-  #group #large-group p {
-    margin: 0;
   }
   #group button {
     display: none;
+  }
+}
+@media (min-width: 1024px) {
+  #group div {
+    margin: 0;
+  }
+  #group #grid-contents {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-areas: "i c c" "i t m";
+  }
+  #group #grid-contents #party-image {
+    grid-area: i;
+  }
+  #group #grid-contents #content-table {
+    grid-area: c;
+    margin-bottom: -40px;
+  }
+  #group #grid-contents #table-help {
+    grid-area: t;
+  }
+  #group #grid-contents #table-help > div {
+    height: 200px;
+  }
+  #group #grid-contents #complex-stuff {
+    grid-area: m;
+    width: 100%;
+    margin-top: -30px;
+  }
+  #group #grid-contents #complex-stuff p {
+    padding: 20px;
   }
 }
 
@@ -517,6 +547,9 @@ footer {
   }
 }
 
+#memberships img {
+  display: none;
+}
 #memberships h1 {
   font-size: 28px;
   text-align: center;
@@ -592,6 +625,27 @@ footer {
     display: none;
   }
 }
+@media (min-width: 1200px) {
+  #memberships img {
+    display: block;
+  }
+  #memberships #all-stuff {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: "pp ii";
+  }
+  #memberships #all-stuff #not-image {
+    grid-area: pp;
+  }
+  #memberships #all-stuff #is-image {
+    grid-area: ii;
+    margin-bottom: -240px;
+    margin-top: -20px;
+  }
+  #memberships #all-stuff #is-image img {
+    height: 80%;
+  }
+}
 
 #services {
   color: #454545;
@@ -602,6 +656,11 @@ footer {
   padding: 20px 0px 20px 0px;
   background-color: #252C32;
   color: white;
+}
+@media (min-width: 1024px) {
+  #services h1 {
+    margin-top: 0;
+  }
 }
 #services h3 {
   font-size: 24px;
@@ -639,6 +698,11 @@ footer {
 #services #groupon {
   display: none;
 }
+@media (min-width: 1024px) {
+  #services #groupon {
+    display: block;
+  }
+}
 #services #online {
   display: none;
 }
@@ -659,23 +723,40 @@ footer {
   #services #all-rates div {
     height: 450px;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  #services #all-rates div {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
   #services #boulder {
     grid-area: c1;
   }
+}
+@media (min-width: 768px) {
   #services #day {
     grid-area: c2;
   }
+}
+@media (min-width: 768px) {
   #services #punch {
     grid-area: c3;
   }
+}
+@media (min-width: 768px) {
   #services #stuff {
     padding: 10px 90px;
   }
+}
+@media (min-width: 768px) {
   #services #stuff button {
     display: block;
     width: 100%;
     margin-top: 20px;
   }
+}
+@media (min-width: 768px) {
   #services #more {
     padding-left: 70px;
     padding-right: 70px;
@@ -686,6 +767,21 @@ footer {
   #services #more button {
     margin-left: 20px;
     margin-bottom: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #services #more {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "i c";
+  }
+  #services #more #groupon {
+    grid-area: i;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #services #more #help {
+    grid-area: c;
   }
 }
 
@@ -742,6 +838,11 @@ footer {
 #start img {
   display: none;
 }
+@media (min-width: 1024px) {
+  #start img {
+    display: block;
+  }
+}
 #start h2 {
   font-size: 28px;
 }
@@ -763,11 +864,21 @@ footer {
 #start #start-content button {
   display: none;
 }
+@media (min-width: 1024px) {
+  #start #start-content button {
+    display: block;
+  }
+}
 @media (min-width: 768px) {
   #start #start-content {
     padding: 40px 110px 40px 110px;
   }
   #start #start-content #s2 {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #start #start-content #s3 {
     display: block;
   }
 }
@@ -788,5 +899,24 @@ footer {
   #start #hours {
     padding-left: 150px;
     padding-right: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  #start {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "gs hs";
+  }
+  #start #start-content {
+    grid-area: gs;
+  }
+  #start #hours {
+    grid-area: hs;
+    padding: 0;
+  }
+  #start img {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

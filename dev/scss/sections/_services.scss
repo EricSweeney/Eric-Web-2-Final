@@ -6,6 +6,9 @@
         padding: 20px 0px 20px 0px;
         background-color: #252C32;
         color: white;
+        @include lg{
+            margin-top: 0;
+        }
     }
 
     h3{font-size: 24px;}
@@ -42,7 +45,12 @@
         }
     }
     
-    #groupon {display: none;}
+    #groupon {
+        display: none;
+        @include lg{
+            display: block;
+        }
+    }
     #online {display: none;}
 
     #more{
@@ -56,6 +64,9 @@
         #all-rates{
             div{
                 height: 450px;
+                @include lg{
+                    height: 300px;
+                }
             }
             display: grid;
             grid-template-columns: (3, 1fr);
@@ -91,6 +102,22 @@
             button{
                 margin-left: 20px;
                 margin-bottom: 20px;
+            }
+        }
+    }
+    @include lg{
+        #more{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-areas: "i c";
+
+            #groupon{
+                grid-area: i;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+            #help{
+                grid-area: c;
             }
         }
     }

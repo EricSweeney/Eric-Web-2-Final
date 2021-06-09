@@ -1,4 +1,7 @@
 #memberships {
+    img{
+        display: none;
+    }
     h1{
         font-size: 28px;
         text-align: center;
@@ -77,5 +80,27 @@
             }
         }
         
+    }
+    @include xl{
+        img{
+            display: block;
+        }
+        #all-stuff{
+            display: grid;
+            grid-template-columns: 80% 20%;
+            grid-template-areas: "pp ii";
+
+            #not-image{
+                grid-area: pp;
+            }
+            #is-image{
+                grid-area: ii;
+                img{
+                    height: 80%;
+                }
+                margin-bottom: -240px;
+                margin-top: -20px;
+            }
+        }
     }
 }

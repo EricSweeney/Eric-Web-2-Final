@@ -2,6 +2,9 @@
     color: #454545;
     img {
         display: none;
+        @include lg{
+            display: block;
+        }
     }
     h2{
         font-size: 28px;
@@ -25,6 +28,9 @@
            
         button {
             display: none;
+            @include lg{
+                display: block;
+            }
         }
             
         @include md {
@@ -32,6 +38,11 @@
                 display: block;
             }
             padding: 40px 110px 40px 110px;
+        }
+        @include lg{
+            #s3 {
+                display: block;
+            }
         }
     }   
     #hours {
@@ -53,5 +64,23 @@
             padding-right: 150px;
         }
     } 
+    @include lg{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-areas: "gs hs";
+
+        #start-content{
+            grid-area: gs;
+        }
+        #hours{
+            grid-area: hs;
+            padding: 0;
+        }
+        img{
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
 
