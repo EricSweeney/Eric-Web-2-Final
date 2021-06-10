@@ -2,7 +2,93 @@
     Footer
 ============= */
 
-footer{
+footer {
     background-color: #252c32;
     color: #ebeaea;
+
+    address {
+        font-style: initial;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    a {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #ebeaea;
+    }
+
+    img {
+        display: none;
+    }
+
+    #foot {
+        padding: 20px 90px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "l u";
+
+        #location {
+            grid-area: l;
+
+            button {
+                display: none;
+            }
+        }
+
+        #contact {
+            grid-area: u;
+        }
+    }
+
+    @include md {
+        img {
+            display: block;
+        }
+
+        #foot {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "s l u";
+
+            #social {
+                grid-area: s;
+            }
+
+            #location {
+                grid-area: l;
+
+                button {
+                    display: block;
+                    border: none;
+                    color: #ebeaea;
+                    padding: 0;
+                    padding-top: 20px;
+                }
+            }
+
+            #contact {
+                grid-area: u;
+            }
+
+            #evil {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                padding-left: 30px;
+                padding-top: 20px;
+            }
+
+            #logo {
+                img {
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    @include lg {
+        #foot {
+            padding: 20px 180px;
+        }
+    }
 }

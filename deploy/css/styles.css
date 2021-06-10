@@ -404,6 +404,74 @@ footer {
   background-color: #252c32;
   color: #ebeaea;
 }
+footer address {
+  font-style: initial;
+  font-family: "Source Sans Pro", sans-serif;
+}
+footer a {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ebeaea;
+}
+footer img {
+  display: none;
+}
+footer #foot {
+  padding: 20px 90px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "l u";
+}
+footer #foot #location {
+  grid-area: l;
+}
+footer #foot #location button {
+  display: none;
+}
+footer #foot #contact {
+  grid-area: u;
+}
+@media (min-width: 768px) {
+  footer img {
+    display: block;
+  }
+  footer #foot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "s l u";
+  }
+  footer #foot #social {
+    grid-area: s;
+  }
+  footer #foot #location {
+    grid-area: l;
+  }
+  footer #foot #location button {
+    display: block;
+    border: none;
+    color: #ebeaea;
+    padding: 0;
+    padding-top: 20px;
+  }
+  footer #foot #contact {
+    grid-area: u;
+  }
+  footer #foot #evil {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  footer #foot #logo img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  footer #foot {
+    padding: 20px 180px;
+  }
+}
 
 /* COVID Warning */
 #covid {
@@ -422,6 +490,11 @@ footer {
   font-weight: 600;
   padding: 0px 20px 0px 20px;
 }
+@media (min-width: 1200px) {
+  #covid p {
+    padding: 0px 200px;
+  }
+}
 
 #group {
   color: #454545;
@@ -432,6 +505,15 @@ footer {
   padding: 20px 0px 20px 0px;
   background-color: #252C32;
   color: white;
+}
+#group #party-image {
+  display: none;
+}
+#group #mobile-image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 #group #work {
   padding: 20px;
@@ -449,6 +531,12 @@ footer {
   font-family: "Source Sans Pro", sans-serif;
 }
 @media (min-width: 768px) {
+  #group #party-image {
+    display: block;
+  }
+  #group #mobile-image {
+    display: none;
+  }
   #group #work {
     padding: 0;
   }
@@ -481,7 +569,7 @@ footer {
     width: 100%;
   }
   #group #grid-contents #complex-stuff p {
-    padding: 20px;
+    padding: 20px 180px;
   }
   #group #headers {
     display: grid;
@@ -667,9 +755,35 @@ footer {
     display: none;
   }
 }
+@media (min-width: 1024px) {
+  #memberships #intro {
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #memberships #cancel p {
+    text-align: center;
+    padding: 0px 180px;
+  }
+}
 @media (min-width: 1200px) {
+  #memberships #intro {
+    padding-left: 400px;
+  }
   #memberships img {
     display: block;
+  }
+  #memberships #table-one {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  #memberships #table-two {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  #memberships #cancel p {
+    padding: 0px 200px;
   }
   #memberships #all-stuff {
     display: grid;
@@ -829,6 +943,14 @@ footer {
     grid-area: c;
   }
 }
+@media (min-width: 1200px) {
+  #services #stuff {
+    padding: 40px 200px;
+  }
+  #services #more {
+    padding: 0px 200px;
+  }
+}
 
 #shop h1 {
   font-size: 28px;
@@ -882,6 +1004,20 @@ footer {
   }
   #shop #shop-content {
     padding: 20px 90px;
+  }
+}
+@media (min-width: 1024px) {
+  #shop #move {
+    padding: 0px 100px;
+  }
+}
+@media (min-width: 1200px) {
+  #shop h2 {
+    padding-left: 60px;
+  }
+  #shop #move {
+    padding-left: 100px;
+    padding-left: 110px;
   }
 }
 
@@ -971,5 +1107,14 @@ footer {
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  #start #start-content {
+    padding-left: 200px;
+  }
+  #start #hours {
+    padding-right: 100px;
+    padding-bottom: 40px;
   }
 }

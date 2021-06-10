@@ -1,25 +1,35 @@
 #services {
     color: #454545;
-    h1{
+
+    h1 {
         font-size: 28px;
         text-align: center;
         padding: 20px 0px 20px 0px;
         background-color: #252C32;
         color: white;
-        @include lg{
+
+        @include lg {
             margin-top: 0;
         }
     }
 
-    h3{font-size: 24px;}
-    img{width: 100%;}
+    h3 {
+        font-size: 24px;
+    }
 
-    #stuff{
+    img {
+        width: 100%;
+    }
+
+    #stuff {
         padding: 0px 20px 0px 20px;
     }
 
-    #boulder{
-        h3 {text-align: center;}
+    #boulder {
+        h3 {
+            text-align: center;
+        }
+
         div {
             background-color: #d8d8d8;
             font-family: 'Source Sans Pro', sans-serif;
@@ -27,8 +37,11 @@
         }
     }
 
-    #day{
-        h3 {text-align: center;}
+    #day {
+        h3 {
+            text-align: center;
+        }
+
         div {
             background-color: #d8d8d8;
             font-family: 'Source Sans Pro', sans-serif;
@@ -36,92 +49,123 @@
         }
     }
 
-    #punch{
-        h3 {text-align: center;}
+    #punch {
+        h3 {
+            text-align: center;
+        }
+
         div {
             background-color: #d8d8d8;
             font-family: 'Source Sans Pro', sans-serif;
             padding: 10px 20px 10px 20px;
         }
     }
-    
+
     #groupon {
         display: none;
-        @include lg{
+
+        @include lg {
             display: block;
         }
     }
-    #online {display: none;}
 
-    #more{
+    #online {
+        display: none;
+    }
+
+    #more {
         background-color: #A1F3DE;
         font-family: 'Source Sans Pro', sans-serif;
-        p{
+
+        p {
             padding: 20px 20px 10px 20px;
         }
-        button{
+
+        button {
             margin: 0px 0px 20px 20px;
         }
     }
-    @include md{
-        #all-rates{
-            div{
+
+    @include md {
+        #all-rates {
+            div {
                 height: 450px;
-                @include lg{
+
+                @include lg {
                     height: 300px;
                 }
             }
+
             display: grid;
             grid-template-columns: (3, 1fr);
             grid-template-areas: "c1 c2 c3";
             gap: 20px;
         }
-        
-        #boulder{
-            grid-area: c1; 
+
+        #boulder {
+            grid-area: c1;
         }
-        #day{
+
+        #day {
             grid-area: c2;
         }
-        #punch{
+
+        #punch {
             grid-area: c3;
         }
-        #stuff{
+
+        #stuff {
             padding: 10px 90px;
         }
-        #stuff{
-            button{
+
+        #stuff {
+            button {
                 display: block;
                 width: 100%;
                 margin-top: 20px;
             }
         }
-        #more{
+
+        #more {
             padding-left: 70px;
             padding-right: 70px;
-            p{
+
+            p {
                 margin-bottom: 0;
             }
-            button{
+
+            button {
                 margin-left: 20px;
                 margin-bottom: 20px;
             }
         }
     }
-    @include lg{
-        #more{
+
+    @include lg {
+        #more {
             display: grid;
             grid-template-columns: 40% 60%;
             grid-template-areas: "i c";
 
-            #groupon{
+            #groupon {
                 grid-area: i;
                 padding-top: 40px;
                 padding-bottom: 40px;
             }
-            #help{
+
+            #help {
                 grid-area: c;
             }
+        }
+    }
+
+    @include xl {
+        #stuff {
+            padding: 40px 200px;
+        }
+
+        #more {
+            padding: 0px 200px;
         }
     }
 }

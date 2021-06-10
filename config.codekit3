@@ -138,6 +138,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/mobile-group.png" : {
+      "ft" : 32768,
+      "iS" : 94796,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/mobile-group.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Services.png" : {
       "ft" : 32768,
       "iS" : 344685,
@@ -247,14 +260,6 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
-    },
-    "\/design\/structure-tags.sketch" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/design\/structure-tags.sketch",
-      "oF" : 0
     },
     "\/design\/Tablet.jpg" : {
       "ft" : 16384,

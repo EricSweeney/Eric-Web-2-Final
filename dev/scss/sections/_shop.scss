@@ -1,58 +1,86 @@
-#shop{
-    h1{
+#shop {
+    h1 {
         font-size: 28px;
         text-align: center;
         padding: 20px 0px 20px 0px;
         background-color: #252C32;
         color: white;
     }
-    p{
+
+    p {
         color: #454545;
         font-family: 'Source Sans Pro', sans-serif;
     }
-    #shop-content{
+
+    #shop-content {
         padding: 20px;
     }
-    p{
+
+    p {
         display: none;
     }
-    img{
-        width: 100%;
-    }
-    h2{
-        color: #454545;
-    }
-    h3{
-        text-align: center;
-        color: #454545;
-    }
-    button{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    input{
+
+    img {
         width: 100%;
     }
 
-    @include md{
-        p{
+    h2 {
+        color: #454545;
+    }
+
+    h3 {
+        text-align: center;
+        color: #454545;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    @include md {
+        p {
             display: block;
         }
-        #shop-items{
+
+        #shop-items {
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-areas: "s1 s2";
             gap: 20px;
 
-            #gear{
+            #gear {
                 grid-area: s1;
             }
-            #merch{
+
+            #merch {
                 grid-area: s2;
             }
         }
-        #shop-content{
+
+        #shop-content {
             padding: 20px 90px;
+        }
+    }
+
+    @include lg {
+        #move {
+            padding: 0px 100px;
+        }
+    }
+
+    @include xl {
+        h2 {
+            padding-left: 60px;
+        }
+
+        #move {
+            padding-left: 100px;
+            padding-left: 110px;
         }
     }
 }

@@ -1,113 +1,172 @@
 #memberships {
-    img{
+    img {
         display: none;
     }
-    h1{
+
+    h1 {
         font-size: 28px;
         text-align: center;
         padding: 20px 0px 20px 0px;
         background-color: #252C32;
         color: white;
     }
-    h2{
+
+    h2 {
         color: #454545;
     }
-    button{
+
+    button {
         margin: 0px 0px 20px 20px;
     }
-    .bebas{
+
+    .bebas {
         font-family: 'Source Sans Pro', sans-serif;
     }
-    .hide{
+
+    .hide {
         display: none;
     }
-    #intro{
+
+    #intro {
         padding: 20px;
         color: #454545;
     }
-    #cancel-p{
+
+    #cancel-p {
         color: #454545;
     }
-    @include md{
-        #intro{
+
+    @include md {
+        #intro {
             padding: 0px 90px;
         }
-        .hide{
+
+        .hide {
             display: block;
         }
-        .title{
+
+        .title {
             padding-left: 90px;
             font-family: 'Bebas Neue', cursive;
         }
-        #member-one{
+
+        #member-one {
             display: grid;
             grid-auto-columns: 40% 60%;
             grid-template-areas: "a t";
 
-            table{
+            table {
                 width: 100%;
                 height: 250px;
                 padding-left: 20px;
             }
-            #aside-one{
+
+            #aside-one {
                 grid-area: a;
                 background-color: #d8d8d8;
                 padding: 20px 20px 20px 70px;
             }
-            #table-one{
+
+            #table-one {
                 grid-area: t;
             }
         }
-        #member-two{
+
+        #member-two {
             display: grid;
             grid-template-columns: 40% 60%;
             grid-template-areas: "m c";
 
-            table{
+            table {
                 width: 100%;
                 height: 100px;
                 padding-left: 20px;
             }
 
-            #aside-two{
+            #aside-two {
                 grid-area: m;
                 background-color: #d8d8d8;
                 padding: 20px 20px 20px 70px;
             }
-            #table-two{
+
+            #table-two {
                 grid-area: c;
             }
         }
-        #cancel{
+
+        #cancel {
             background-color: #a1f3de;
             padding: 10px 90px;
             margin-top: 40px;
-            h2{
+
+            h2 {
                 text-align: center;
             }
-            button{
+
+            button {
                 display: none;
             }
         }
-        
+
     }
-    @include xl{
-        img{
+
+    @include lg {
+        #intro {
+            padding-left: 180px;
+            padding-right: 180px;
+            padding-top: 40px;
+            padding-bottom: 40px
+        }
+
+        #cancel {
+            p {
+                text-align: center;
+                padding: 0px 180px;
+            }
+        }
+    }
+
+    @include xl {
+        #intro {
+            padding-left: 400px;
+        }
+
+        img {
             display: block;
         }
-        #all-stuff{
+
+        #table-one {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        #table-two {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        #cancel {
+            p {
+                padding: 0px 200px;
+            }
+        }
+
+        #all-stuff {
             display: grid;
             grid-template-columns: 80% 20%;
             grid-template-areas: "pp ii";
 
-            #not-image{
+            #not-image {
                 grid-area: pp;
             }
-            #is-image{
+
+            #is-image {
                 grid-area: ii;
-                img{
+
+                img {
                     height: 80%;
                 }
+
                 margin-bottom: -240px;
                 margin-top: -20px;
             }

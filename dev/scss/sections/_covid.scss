@@ -7,12 +7,20 @@
     background-color: #FF6A7F;
     color: #631f1f;
     padding: 5px;
-    h2{
+
+    h2 {
         font-size: 28px;
     }
-    p{
+
+    p {
         font-size: 16px;
         font-weight: 600;
         padding: 0px 20px 0px 20px;
+    }
+
+    @include xl {
+        p {
+            padding: 0px 200px;
+        }
     }
 }
