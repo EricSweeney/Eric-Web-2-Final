@@ -57,7 +57,10 @@
         background-color: #A1F3DE;
         font-family: 'Source Sans Pro', sans-serif;
         p{
-            padding: 20px;
+            padding: 20px 20px 10px 20px;
+        }
+        button{
+            margin: 0px 0px 20px 20px;
         }
     }
     @include md{

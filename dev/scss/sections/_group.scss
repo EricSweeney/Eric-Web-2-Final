@@ -18,6 +18,13 @@
     }
     color: #454545;
 
+    table{
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    #large-group{
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
 
     @include md{
         #work{

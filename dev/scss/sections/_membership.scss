@@ -9,6 +9,12 @@
         background-color: #252C32;
         color: white;
     }
+    h2{
+        color: #454545;
+    }
+    button{
+        margin: 0px 0px 20px 20px;
+    }
     .bebas{
         font-family: 'Source Sans Pro', sans-serif;
     }
@@ -17,6 +23,9 @@
     }
     #intro{
         padding: 20px;
+        color: #454545;
+    }
+    #cancel-p{
         color: #454545;
     }
     @include md{
@@ -28,6 +37,7 @@
         }
         .title{
             padding-left: 90px;
+            font-family: 'Bebas Neue', cursive;
         }
         #member-one{
             display: grid;

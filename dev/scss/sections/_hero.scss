@@ -3,22 +3,22 @@
 #hero{
     background-image: url(../img/Hero.png);
     background-position: center;
-    background-size: 100%;
+    background-size: 150%;
     margin-top: 0;
     padding-top: 50px;
-    padding-bottom: 50px;;
-
+    padding-bottom: 50px;
     
 
+
     h2 {
-        color: white;
+        color: #ebeaea;
         font-size: 24px;
         padding-left: 20px;
-        width: 50%;
+        width: 45%;
     }
     p {
         display: none;
-        color: white;
+        color: #ebeaea;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 16px;
         font-weight: 600;
@@ -27,6 +27,7 @@
         display: none;
     }
     @include md{
+        background-size: 120%;
         padding: 90px 90px 90px 90px;
         p{
             display: block;
@@ -36,6 +37,10 @@
         button {
             display: block;
             margin-left: 20px;
+            border-style: solid;
+            border-color: #e9ffc3;
+            color: #e9ffc3;
+            background-color: transparent;
         }
     }
 }

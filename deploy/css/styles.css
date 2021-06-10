@@ -354,6 +354,18 @@ template {
 /* =============
     Base
 ============= */
+.solid {
+  background-color: #ebeaea;
+}
+
+.earl {
+  background-color: #ebeaea;
+}
+
+.right {
+  text-align: right;
+}
+
 /* =============
     Typography
 ============= */
@@ -364,6 +376,14 @@ body {
 /* =============
     Buttons
 ============= */
+button {
+  font-family: "Source Sans Pro", sans-serif;
+  border-style: solid;
+  border-color: #05b2b8;
+  color: #05b2b8;
+  background-color: transparent;
+}
+
 /* =============
     Forms
 ============= */
@@ -421,6 +441,12 @@ footer {
 }
 #group .hide {
   display: none;
+}
+#group table {
+  font-family: "Source Sans Pro", sans-serif;
+}
+#group #large-group {
+  font-family: "Source Sans Pro", sans-serif;
 }
 @media (min-width: 768px) {
   #group #work {
@@ -512,20 +538,20 @@ footer {
 #hero {
   background-image: url(../img/Hero.png);
   background-position: center;
-  background-size: 100%;
+  background-size: 150%;
   margin-top: 0;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 #hero h2 {
-  color: white;
+  color: #ebeaea;
   font-size: 24px;
   padding-left: 20px;
-  width: 50%;
+  width: 45%;
 }
 #hero p {
   display: none;
-  color: white;
+  color: #ebeaea;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -535,6 +561,7 @@ footer {
 }
 @media (min-width: 768px) {
   #hero {
+    background-size: 120%;
     padding: 90px 90px 90px 90px;
   }
   #hero p {
@@ -545,6 +572,10 @@ footer {
   #hero button {
     display: block;
     margin-left: 20px;
+    border-style: solid;
+    border-color: #e9ffc3;
+    color: #e9ffc3;
+    background-color: transparent;
   }
 }
 
@@ -558,6 +589,12 @@ footer {
   background-color: #252C32;
   color: white;
 }
+#memberships h2 {
+  color: #454545;
+}
+#memberships button {
+  margin: 0px 0px 20px 20px;
+}
 #memberships .bebas {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -566,6 +603,9 @@ footer {
 }
 #memberships #intro {
   padding: 20px;
+  color: #454545;
+}
+#memberships #cancel-p {
   color: #454545;
 }
 @media (min-width: 768px) {
@@ -577,6 +617,7 @@ footer {
   }
   #memberships .title {
     padding-left: 90px;
+    font-family: "Bebas Neue", cursive;
   }
   #memberships #member-one {
     display: grid;
@@ -712,7 +753,10 @@ footer {
   font-family: "Source Sans Pro", sans-serif;
 }
 #services #more p {
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
+}
+#services #more button {
+  margin: 0px 0px 20px 20px;
 }
 @media (min-width: 768px) {
   #services #all-rates {
@@ -793,6 +837,10 @@ footer {
   background-color: #252C32;
   color: white;
 }
+#shop p {
+  color: #454545;
+  font-family: "Source Sans Pro", sans-serif;
+}
 #shop #shop-content {
   padding: 20px;
 }
@@ -802,8 +850,12 @@ footer {
 #shop img {
   width: 100%;
 }
+#shop h2 {
+  color: #454545;
+}
 #shop h3 {
   text-align: center;
+  color: #454545;
 }
 #shop button {
   width: 100%;
